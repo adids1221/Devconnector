@@ -5,8 +5,8 @@ const request = require('request');
 const config = require('config');
 const { check, validationResult } = require('express-validator');
 
-const Profile = require('../../modles/Profile');
-const User = require('../../modles/User');
+const Profile = require('../../models/Profile');
+const User = require('../../models/User');
 
 // @route  GET api/profile/me
 // @desc   Get current user's profile
@@ -98,7 +98,7 @@ router.post('/', [
             res.json(profile);
         } catch (err) {
             console.error(err.message);
-            res.status(500).send('Server Error');
+            return res.status(500).send('Server Error');
         }
     }
 );
@@ -246,7 +246,6 @@ router.delete('/experience/:exp_id', auth, async (req, res) => {
     }
 });
 
-//--------------------------------------------------------------------------
 // @route  PUT api/profile/education
 // @desc   Add profile education
 // @access Private
