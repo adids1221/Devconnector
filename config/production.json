@@ -1,6 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://adids1221:8012466adi@mern-cluster.v4hpx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "jwtSecret": "mySecretToken",
-    "githubSecret": "a3f76b6d764e2b03d65cb2bbe6f7eb4bbf0f2b3f",
-    "githubClientId": "cec0e037bdc29dc5d324"
-}
